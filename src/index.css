@@ -2,7 +2,10 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color: #242424;
   background-color: #ffce74;
+
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1200px;
 }
