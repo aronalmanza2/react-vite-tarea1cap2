@@ -8,7 +8,6 @@ export const data = {
       precio: 8.5,
       categoria: "Entradas",
       imagen: "/img/ensalada-cesar.jpg",
-      disponible: true,
     },
     {
       id: 2,
@@ -18,7 +17,6 @@ export const data = {
       precio: 6.0,
       categoria: "Entradas",
       imagen: "/img/sopa-tomate.jpg",
-      disponible: true,
     },
     {
       id: 3,
@@ -28,7 +26,6 @@ export const data = {
       precio: 9.75,
       categoria: "Platos Principales",
       imagen: "/img/hamburguesa-clasica.jpg",
-      disponible: true,
     },
     {
       id: 4,
@@ -38,7 +35,6 @@ export const data = {
       precio: 11.0,
       categoria: "Platos Principales",
       imagen: "/img/pasta-carbonara.jpg",
-      disponible: true,
     },
     {
       id: 5,
@@ -48,7 +44,6 @@ export const data = {
       precio: 10.5,
       categoria: "Platos Principales",
       imagen: "/img/pizza-margherita.jpg",
-      disponible: true,
     },
     {
       id: 6,
@@ -58,7 +53,6 @@ export const data = {
       precio: 9.0,
       categoria: "Platos Principales",
       imagen: "/img/tacos-pollo-asado.jpg",
-      disponible: true,
     },
     {
       id: 7,
@@ -68,7 +62,6 @@ export const data = {
       precio: 12.0,
       categoria: "Platos Principales",
       imagen: "/img/lasagna-carne.jpg",
-      disponible: true,
     },
     {
       id: 8,
@@ -77,7 +70,6 @@ export const data = {
       precio: 5.0,
       categoria: "Postres",
       imagen: "/img/helado-vainilla.jpg",
-      disponible: true,
     },
     {
       id: 9,
@@ -86,7 +78,6 @@ export const data = {
       precio: 6.5,
       categoria: "Postres",
       imagen: "/img/tarta-chocolate.jpg",
-      disponible: true,
     },
     {
       id: 10,
@@ -95,7 +86,6 @@ export const data = {
       precio: 5.5,
       categoria: "Postres",
       imagen: "/img/flan-caramelo.jpg",
-      disponible: true,
     },
     {
       id: 11,
@@ -104,7 +94,6 @@ export const data = {
       precio: 2.0,
       categoria: "Bebidas",
       imagen: "/img/cafe-expreso.jpg",
-      disponible: true,
     },
     {
       id: 12,
@@ -113,7 +102,6 @@ export const data = {
       precio: 3.5,
       categoria: "Bebidas",
       imagen: "/img/jugo-naranja.jpg",
-      disponible: true,
     },
     {
       id: 13,
@@ -122,7 +110,6 @@ export const data = {
       precio: 1.5,
       categoria: "Bebidas",
       imagen: "/img/agua-limon.jpg",
-      disponible: true,
     },
     {
       id: 14,
@@ -131,7 +118,6 @@ export const data = {
       precio: 7.0,
       categoria: "Aperitivos",
       imagen: "/img/nachos-guacamole.jpg",
-      disponible: true,
     },
     {
       id: 15,
@@ -140,7 +126,22 @@ export const data = {
       precio: 4.0,
       categoria: "Aperitivos",
       imagen: "/img/pan-de-ajo.jpg",
-      disponible: true,
     },
   ],
+
+  fnPlatosEntradas: () => {
+    return data.platos.filter((x) => x.categoria === "Entradas");
+  },
+  fnPlatosPrincipales: () => {
+    return data.platos.filter((x) => x.categoria === "Platos Principales");
+  },
+  fnPlatosPostres: () => {
+    return data.platos.filter((x) => x.categoria === "Postres");
+  },
+  fnPlatosBebidas: () => {
+    return data.platos.filter((x) => x.categoria === "Bebidas");
+  },
+  fnPlatosAperitivos: () => {
+    return data.platos.filter((x) => x.categoria === "Aperitivos");
+  },
 };

@@ -3,10 +3,12 @@ import { createRoot } from "react-dom/client";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './index.css'
-import Restaurante from "./Restaurante.jsx";
+import RestauranteC from "./RestauranteC.jsx";
+import RestauranteF from "./RestauranteF.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Restaurante />
+    {/* <RestauranteC /> */}
+    <RestauranteF />
   </StrictMode>
 );
